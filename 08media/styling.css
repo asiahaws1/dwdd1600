@@ -1,0 +1,340 @@
+/* Prevent problems with different browsers */
+*{box-sizing: border-box;}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0px;
+}
+
+/* Header Stuff Here*/
+header{
+    background-color: #f0f5ee;
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+}
+header div{
+    padding-left: 1vw;
+}
+
+header h1 {
+    margin: 0;
+    color: #b22930;
+}
+
+header p {
+    margin: 0;
+    color: #b22930;
+    letter-spacing: .5px;
+}
+/* small screens */
+@media only screen and (max-width: 800px) {
+    nav ul{
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+    
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: capitalize;
+        text-align: center;
+        border-bottom: solid 1px #aaa;
+        color: #b22930;
+    }
+
+    nav .active a {
+        background-color: #a4c196;
+        background-image: linear-gradient(to bottom, #a4c196,#bde0ab);
+        color:white;
+    }
+
+ } /* end of media query */
+
+
+/* BIG SCREENS */
+@media only screen and (min-width: 801px) {
+    nav{
+        background-color: #a4c196;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0 2vw;
+        margin: 0;
+        display: flex;
+    }
+    
+    nav a {
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: #f0f5ee;
+        font-weight: 700;
+        display: block;
+        padding: .83rem 2rem;
+    
+    }
+    
+    nav li.active a {
+        background-color: #f9bcbd;
+        color: #b22930;
+    }
+    
+    nav a:hover {
+        color: #b22930;
+    }
+    
+
+} 
+
+
+
+
+/* stuff for the main */
+main{
+    padding: 1rem 2vw;
+}
+
+main h1{
+    color: #f9bcbd;
+}
+
+main h2{
+    color: #f9bcbd;
+    margin-bottom: .2rem;
+
+}
+
+main p{
+    color: #2f3133;
+    margin: 0 0 .3rem 0;
+
+}
+
+main ol {
+    list-style-type: decimal;
+    padding: .5rem 3vw;
+    background-color: #f0f5ee;
+    
+}
+
+main dl dt {
+    color: #ea5e51;
+    font-weight: 700;
+}
+
+main dl dd {
+    color: #b22930;
+    font-size: .9rem;
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+
+
+main address {
+    font-style: normal;
+    background-color: #a4c196;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #f9bcbd;
+    border-radius: .5rem;
+
+
+}
+
+main a {
+    color: #b22930;
+}
+
+main a:hover {
+    color: rgb(239,0,24);
+}
+
+.modelhero {
+    width: 100%;
+    margin: 0;
+}
+
+.modelhero img{
+    width: 100%;
+    height: auto;
+
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+} 
+.gallery section {
+    flex-basis: 50%;
+    margin: 1rem 0;
+    
+}
+.gallery span {
+    display: block;
+    text-align: center; 
+    font-weight: 700;
+    color: #895772;
+}
+.gallery img {
+    width: 98%;
+    height: auto;
+    
+}
+
+.gallery img:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+
+
+}
+
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped figcaption{
+    text-align: center;
+    font-size: .75rem;
+    color: #b22930;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #b22930;
+}
+
+/*/ shipping page css /*/
+
+.myForm fieldset {
+    border: 1px solid#a4c196;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.myForm legend {
+    color: #b22930;
+    font-size: .8rem;
+}
+
+.myForm label {
+    margin: .5rem;
+}
+
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm textarea{
+    display:block;
+}
+
+.myForm [type=text], .myForm [type=tel], .myForm select, .myForm textarea {
+
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+
+
+.myForm textarea {
+    height: 6rem;
+ }
+ 
+ 
+ .myForm :required {
+    background-color: rgba(117, 199, 128, 0.1);
+ }
+ 
+ .myForm [type=submit] {
+    background-color: #f9bcbd;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+ }
+
+
+
+ table.our-terms {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.our-terms th {
+    background-color: #f9bcbd;
+    color: white;
+    padding: .5rem 2vw;
+    text-align:left;
+}
+
+table.our-terms td {
+    color: #b22930;
+    padding: .4rem 2vw;
+
+}
+
+table.our-terms tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+table.our-terms tr:hover {
+    background-color: rgba(117, 199, 128, 0.2);
+}
+
+
+
+
+
+/*/ footer stuff here /*/
+footer {
+    background-color: #f0f5ee;
+    text-align: center;
+    color: #b22930;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
+footer a {
+    color: #b22930;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
